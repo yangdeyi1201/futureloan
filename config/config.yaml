@@ -1,0 +1,33 @@
+log:
+  filename: 'log.log'
+  logger_level: 'DEBUG'
+  console_level: 'DEBUG'
+  file_level: 'INFO'
+
+db:
+  host: '120.78.128.25'
+  port: 3306
+  user: 'future'
+  password: '123456'
+  charset: 'utf8'
+
+excel:
+  filename: 'cases.xlsx'
+
+project:
+  borrower_id: 161092
+  investor_id: 12118
+  administrator_id: 12129
+  host: 'http://120.78.128.25:8766/futureloan'
+
+borrower:
+  mobile_phone: '18584086762'
+  pwd: 'yey1201abc'
+
+investor:
+  mobile_phone: '13981970269'
+  pwd: '12345678'
+
+administrator:
+  mobile_phone: '13982204699'
+  pwd: '12345678'
