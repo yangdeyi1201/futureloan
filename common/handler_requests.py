@@ -1,5 +1,7 @@
 import requests
 
+sess = requests.sessions.Session()
+
 
 def visit_api(method, url, headers=None, params=None, data=None, json=None, **kwargs):
 
@@ -11,5 +13,9 @@ def visit_api(method, url, headers=None, params=None, data=None, json=None, **kw
     # data: 在请求体中，以 form 表单格式发送
     # json: 在请求体中，以 json 数据格式发送
 
-    res = requests.request(method, url, headers=headers, params=params, data=data, json=json, **kwargs)
+    ''' 支持 cookie/token 鉴权 '''
+    res = sess.request(method, url, headers=headers, params=params, data=data, json=json, **kwargs)
+
+    ''' 仅支持 token 鉴权'''
+    # res = requests.request(method, url, headers=headers, params=params, data=data, json=json, **kwargs)
     return res.json()
