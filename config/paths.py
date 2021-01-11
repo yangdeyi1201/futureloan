@@ -26,7 +26,7 @@ TESTS_PATH = Path(__file__).resolve().parents[1]/'tests'
 #     f.write('hello world')
 
 ''' 4、判断一个路径表示的文件或文件夹是否真的存在 '''
-Path.exists(path)
+# Path.exists(path)
 
 ''' 5、创建目录 '''
 # if not Path.exists(directory_path):
@@ -36,7 +36,7 @@ Path.exists(path)
 # Path.is_file(path)
 
 ''' 7、判断一个路径表示的是否是一个文件夹 '''
-# Path.is_dir(path)
+Path.is_dir(path)
 
 ''' 8、获取当前工作目录 '''
-# print(Path.cwd())
+print(Path.cwd())
