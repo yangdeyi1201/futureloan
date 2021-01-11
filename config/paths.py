@@ -14,7 +14,7 @@ TESTS_PATH = Path(__file__).resolve().parents[1]/'tests'
 
 
 ''' 1、获取当前文件绝对路径 '''
-# current_path = Path(__file__).resolve()
+current_path = Path(__file__).resolve()
 
 ''' 2、获取当前文件上 n 级目录 '''
 # current_path.parents[n-1]
